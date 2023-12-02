@@ -16,7 +16,7 @@
                 android:name=".views.CadastroDev"
                 android:exported="false"/>
         <activity
-                android:name=".views.ListaDevs"
+                android:name=".views.ListaServico"
                 android:exported="false"/>
         <activity
                 android:name=".views.MainActivity"

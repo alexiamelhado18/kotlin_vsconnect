@@ -13,7 +13,7 @@ class MainActivity : AppCompatActivity() {
 
         val button = findViewById<Button>(R.id.buttonLogin);
         button.setOnClickListener {
-            val intent = Intent(this, CadastroDev::class.java);
+            val intent = Intent(this, ListaServico::class.java);
             startActivity(intent);
         }
 

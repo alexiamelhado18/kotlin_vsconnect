@@ -20,7 +20,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-            android:hint="@string/nome" android:autofillHints="" android:inputType="TODO" tools:ignore="TextFields"/>
+            android:hint="@string/nome" android:autofillHints="" android:inputType="text" tools:ignore="TextFields"/>
 
     <EditText
             android:id="@+id/editTextEmail"
