@@ -20,12 +20,14 @@
     >
 
         <TextView
+                android:id="@+id/titulo"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="texto"
                 android:layout_alignParentStart="true"
-        />
+                android:textStyle="bold"/>
         <TextView
+                android:id="@+id/valor"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="R$ 1300,00"
@@ -37,6 +39,7 @@
             android:layout_width="match_parent"
             android:layout_height="20dp"/>
     <TextView
+            android:id="@+id/descricao"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Preciso fazer um código em python para um bot do telegram. O bot será para solicitação de pagamento."
@@ -44,12 +47,22 @@
     />
     <Space
             android:layout_width="match_parent"
-            android:layout_height="20dp"/>
-    <androidx.recyclerview.widget.RecyclerView
+            android:layout_height="20dp"
+    />
+
+    <GridLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            tools:listitem="@layout/fragment_tech"
-    />
+            android:orientation="horizontal"
+    >
+        <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="102dp"
+                android:orientation="horizontal"
+                tools:listitem="@layout/fragment_tech"
+                android:layout_row="0" android:layout_column="0"/>
+    </GridLayout>
+
 
 
 </LinearLayout>
